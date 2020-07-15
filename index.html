@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple web component</title>
+    <style>
+        h4 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h4>Hello World</h4>
+
+    <user-card name="Nenno Lello" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+        <div slot="email">nenno@lello.ca</div>
+        <div slot="phone">555-555-5555</div>
+      </user-card>
+    <user-card name="Nenna Lella" avatar="https://randomuser.me/api/portraits/women/1.jpg">
+        <div slot="email">nenna@lella.ca</div>
+        <div slot="phone">333 33333334</div>
+    </user-card>
+    <user-card name="Sonia Maccioni" avatar="https://randomuser.me/api/portraits/women/2.jpg">
+        <div slot="email">sonia@maccioni.ca</div>
+        <div slot="phone">333 33333335</div></user-card>
+
+    <script src="userCard.js"></script>
+</body>
+</html>
